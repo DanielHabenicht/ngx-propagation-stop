@@ -12,7 +12,7 @@ cache:
     - ~/.npm
 branches:
   only:
-    - master   
+    - master
 notifications:
   email: false
 node_js:
@@ -25,7 +25,7 @@ before_script:
 script:
  - npm run test
  - npm run e2e
- - npm run build-prod
+ - npm run packagr
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
 branches:
