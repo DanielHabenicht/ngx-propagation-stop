@@ -1,1 +1,1 @@
-export * from './src/app/directives/stop-propagation.directive';
+export * from './src/app/directives/click-stop-propagation.directive';

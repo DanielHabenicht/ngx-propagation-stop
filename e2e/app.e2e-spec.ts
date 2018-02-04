@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('stop-propagation App', () => {
+describe('click-stop-propagation App', () => {
   let page: AppPage;
 
   beforeEach(() => {

@@ -1,7 +1,22 @@
 {
-  "name": "stop-propagation",
-  "version": "0.0.0",
+  "name": "ngx-click-stop-propagation",
+  "version": "0.0.5",
+  "description": "Stop Click Propagation on any Element.",
+  "keywords": ["angular", "propagation"],
+  "bugs": {
+    "url":
+      "https://github.com/DanielHabenicht/ngx-click-stop-propagation/issues"
+  },
+  "author": {
+    "name": "Daniel Habenicht",
+    "email": "daniel-habenicht@aquiver.de",
+    "url": "https://www.aquiver.de"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielHabenicht/ngx-click-stop-propagation"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --aot",
@@ -14,18 +29,7 @@
   },
   "private": false,
   "dependencies": {
-    "@angular/animations": "^5.2.0",
-    "@angular/common": "^5.2.0",
-    "@angular/compiler": "^5.2.0",
-    "@angular/core": "^5.2.0",
-    "@angular/forms": "^5.2.0",
-    "@angular/http": "^5.2.0",
-    "@angular/platform-browser": "^5.2.0",
-    "@angular/platform-browser-dynamic": "^5.2.0",
-    "@angular/router": "^5.2.0",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "@angular/core": "^5.2.0"
   },
   "devDependencies": {
     "@angular/cli": "1.6.7",
