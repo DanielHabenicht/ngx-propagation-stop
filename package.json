@@ -7,7 +7,7 @@
     "start": "ng serve --aot",
     "build": "ng build --prod",
     "build-prod": "ng build --prod --build-optimizer --aot",
-    "test": "ng test",
+    "test": "ng test --single-run",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json"
