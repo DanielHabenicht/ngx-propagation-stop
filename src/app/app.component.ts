@@ -9,6 +9,20 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  public title: string = 'app';
+  public outerClick: boolean = false;
 
+  public innerClick: boolean = false;
+
+  public outerClicked() {
+    this.outerClick = true;
+  }
+
+  public innerClicked() {
+    this.innerClick = true;
+  }
+
+  public reset() {
+    this.outerClick = false;
+    this.innerClick = false;
+  }
 }

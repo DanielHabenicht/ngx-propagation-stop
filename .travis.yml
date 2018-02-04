@@ -26,4 +26,5 @@ before_script:
   - npm prune
 script:
  - npm run test
+ - npm run e2e
  - npm run build-prod

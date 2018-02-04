@@ -1,0 +1,21 @@
+.centered {
+  text-align: center;
+}
+
+.outer {
+  height: 200px;
+  width: 200px;
+  vertical-align: middle;
+  background-color: rgb(65, 105, 225);
+}
+
+.inner {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  background-color: rgb(0, 0, 255);
+}
+
+.clicked {
+  background-color: rgb(0, 128, 0);
+}

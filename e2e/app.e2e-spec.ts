@@ -7,8 +7,10 @@ describe('stop-propagation App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should stop Propagation', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    page.clickInner();
+    expect(page.getElementColor('inner')).toEqual('rgba(0, 128, 0, 1)');
+    expect(page.getElementColor('outer')).not.toEqual('rgba(0, 128, 0, 1)');
   });
 });

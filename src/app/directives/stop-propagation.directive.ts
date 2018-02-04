@@ -9,5 +9,4 @@ export class StopPropagationDirective {
     public onClick(event: any): void {
         event.stopPropagation();
     }
-
 }
