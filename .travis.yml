@@ -8,10 +8,10 @@ addons:
       - google-chrome-stable
 cache:
   directories:
-    - node_modules
+    - ~/.npm
 branches:
   only:
-    - master    
+    - master   
 notifications:
   email: false
 node_js:
@@ -25,3 +25,8 @@ script:
  - npm run test
  - npm run e2e
  - npm run build-prod
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
