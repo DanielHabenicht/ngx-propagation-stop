@@ -1,11 +1,13 @@
 {
   "name": "ngx-click-stop-propagation",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Stop Click Propagation on any Element.",
-  "keywords": ["angular", "propagation"],
+  "keywords": [
+    "angular",
+    "propagation"
+  ],
   "bugs": {
-    "url":
-      "https://github.com/DanielHabenicht/ngx-click-stop-propagation/issues"
+    "url": "https://github.com/DanielHabenicht/ngx-click-stop-propagation/issues"
   },
   "author": {
     "name": "Daniel Habenicht",
@@ -47,6 +49,8 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
@@ -57,10 +61,15 @@
     "ng-packagr": "^1.7.0",
     "protractor": "~5.1.2",
     "semantic-release": "^12.4.1",
+    "travis-deploy-once": "^4.3.4",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3",
-    "zone.js": "^0.8.19",
-    "travis-deploy-once": "^4.3.4"
+    "zone.js": "^0.8.19"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
