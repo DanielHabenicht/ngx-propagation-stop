@@ -8,6 +8,7 @@ addons:
       - google-chrome-stable
 cache:
   directories:
+    - node_modules
     - ~/.npm
 branches:
   only:
