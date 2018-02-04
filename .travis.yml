@@ -27,7 +27,8 @@ script:
  - npm run e2e
  - npm run packagr
 after_success:
-  - cd dist && npm pack && npm run travis-deploy-once "npm run semantic-release"
+  - npm run pack
+  - npm run travis-deploy-once "npm run release"
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/

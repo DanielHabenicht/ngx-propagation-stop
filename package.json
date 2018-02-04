@@ -2,10 +2,7 @@
   "name": "ngx-propagation-stop",
   "version": "0.0.0-development",
   "description": "Stop Click Propagation on any Element.",
-  "keywords": [
-    "angular",
-    "propagation"
-  ],
+  "keywords": ["angular", "propagation"],
   "bugs": {
     "url": "https://github.com/DanielHabenicht/ngx-propagation-stop/issues"
   },
@@ -28,8 +25,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
-    "release": "npx semantic-release",
-    "semantic-release": "semantic-release",
+    "pack": "npm pack ./dist",
+    "publish": "npm publish ./dist",
+    "release":
+      "semantic-release pre && npm run publish && semantic-release post",
     "travis-deploy-once": "travis-deploy-once",
     "commit": "git add * && git-cz"
   },
