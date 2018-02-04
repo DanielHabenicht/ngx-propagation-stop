@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DanielHabenicht/ngx-stopPropagation.svg?branch=master)](https://travis-ci.org/DanielHabenicht/ngx-stopPropagation)
+
 # ngx-stopPropagation
 
 A npm-packet for a Stop Propagation directive
