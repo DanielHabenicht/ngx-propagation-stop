@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/DanielHabenicht/ngx-click-stop-propagation.svg?branch=master)](https://travis-ci.org/DanielHabenicht/ngx-click-stop-propagation)
+[![Build Status](https://travis-ci.org/DanielHabenicht/ngx-propagation-stop.svg?branch=master)](https://travis-ci.org/DanielHabenicht/ngx-propagation-stop)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-# ngx-click-stop-propagation
+# ngx-propagation-stop
 
 A npm-packet for a stopping Click Event Propagation.
 
@@ -10,13 +10,13 @@ A npm-packet for a stopping Click Event Propagation.
 Install from NPM
 
 ```bash
-$ npm install ngx-click-stop-propagation --save
+$ npm install ngx-propagation-stop --save
 ```
 
 Do not forget to add it to your app.module.ts:
 
 ```typescript
-import { ClickStopPropagationDirective } from 'ngx-click-stop-propagation';
+import { ClickStopPropagationDirective } from 'ngx-propagation-stop';
 
 @NgModule({
   declarations: [
@@ -34,5 +34,7 @@ Just add the `clickStopPropagation` directive to your element and the outer elem
     <div clickStopPropagation (click)="innerElementClicked()"></div>
 </div>
 ```
+
+## Contribute
 
 This project is based on a StackOverflow answer: https://stackoverflow.com/questions/35274028/stop-mouse-event-propagation-in-angular
