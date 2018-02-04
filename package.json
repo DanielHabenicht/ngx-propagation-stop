@@ -28,7 +28,7 @@
     "pack": "npm pack ./dist",
     "publish": "npm publish ./dist",
     "release":
-      "semantic-release pre && npm run publish && semantic-release post",
+      "semantic-release-pre && npm run publish && semantic-release-post",
     "travis-deploy-once": "travis-deploy-once",
     "commit": "git add * && git-cz"
   },
