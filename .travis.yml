@@ -1,0 +1,24 @@
+sudo: required
+dist: trusty
+language: node_js
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master    
+notifications:
+  email: false
+node_js:
+  - stable
+before_install:  
+  - npm i -g npm@^4 -g
+script:
+  - karma start
+  - npm run build-prod
