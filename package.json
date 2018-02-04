@@ -27,9 +27,7 @@
     "packagr": "ng-packagr -p ng-package.json",
     "pack": "npm pack ./dist",
     "publish": "npm publish ./dist",
-    "release":
-      "semantic-release-pre && npm run publish && semantic-release-post",
-    "travis-deploy-once": "travis-deploy-once",
+    "release": "cd dist && semantic-release",
     "commit": "git add * && git-cz"
   },
   "private": false,
