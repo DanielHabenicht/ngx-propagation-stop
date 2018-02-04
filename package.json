@@ -2,10 +2,12 @@
   "name": "ngx-click-stop-propagation",
   "version": "0.0.5",
   "description": "Stop Click Propagation on any Element.",
-  "keywords": ["angular", "propagation"],
+  "keywords": [
+    "angular",
+    "propagation"
+  ],
   "bugs": {
-    "url":
-      "https://github.com/DanielHabenicht/ngx-click-stop-propagation/issues"
+    "url": "https://github.com/DanielHabenicht/ngx-click-stop-propagation/issues"
   },
   "author": {
     "name": "Daniel Habenicht",
@@ -34,6 +36,11 @@
   "devDependencies": {
     "@angular/cli": "1.6.7",
     "@angular/compiler-cli": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "zone.js": "^0.8.19",
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",

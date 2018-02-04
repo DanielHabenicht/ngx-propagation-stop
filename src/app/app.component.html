@@ -1,7 +1,7 @@
 <div class="centered">
   <div (click)="outerClicked()" id="outer" class="outer" [ngClass]="{'clicked': outerClick}">
     Outer
-    <div appStopPropagation (click)="innerClicked()" id="inner" class="inner" [ngClass]="{'clicked': innerClick}">
+    <div clickStopPropagation (click)="innerClicked()" id="inner" class="inner" [ngClass]="{'clicked': innerClick}">
       Inner
       <p>
         (Click me!)
