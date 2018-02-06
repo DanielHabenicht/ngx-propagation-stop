@@ -27,6 +27,9 @@ script:
  - npm run e2e
  - npm run packagr
 after_success:
+  - find -maxdepth 1 ! -name dist ! -name . -exec rm -rv {} \;
+  - mv dist/* .
+  - rmdir dist
   - npm run pack
   - npm run release
 branches:
