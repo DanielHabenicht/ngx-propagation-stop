@@ -30,8 +30,8 @@ after_success:
   - sudo find -maxdepth 1 ! -name dist ! -name . -exec rm -rv -f {} \;
   - mv dist/* .
   - rmdir dist
-  - npm run pack
-  - npm run release
+  - npm pack
+  - semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
