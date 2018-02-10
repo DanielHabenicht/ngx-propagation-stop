@@ -30,7 +30,6 @@ after_success:
   - sudo find -maxdepth 1 ! -name dist ! -name node_modules ! -name .git ! -name . -exec rm -rv -f {} \;
   - mv dist/* .
   - rmdir dist
-  - npm pack
   - semantic-release
 branches:
   except:

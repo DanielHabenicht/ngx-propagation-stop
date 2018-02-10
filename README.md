@@ -16,22 +16,22 @@ $ npm install ngx-propagation-stop --save
 Do not forget to add it to your app.module.ts:
 
 ```typescript
-import { ClickStopPropagationDirective } from 'ngx-propagation-stop';
+import { PropagationStopDirective } from 'ngx-propagation-stop';
 
 @NgModule({
   declarations: [
-    ClickStopPropagationDirective
+    PropagationStopDirective
   ]
 })
 ```
 
 ## How to use
 
-Just add the `clickStopPropagation` directive to your element and the outer elements click event wont get triggered.
+Just add the `propagationStop` directive to your element and the outer elements click event wont get triggered.
 
 ```html
 <div (click)="outerElementClicked()">
-    <div clickStopPropagation (click)="innerElementClicked()"></div>
+    <div propagationStop (click)="innerElementClicked()"></div>
 </div>
 ```
 
