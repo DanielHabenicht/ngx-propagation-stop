@@ -3,6 +3,8 @@
 
 # ngx-propagation-stop
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/DanielHabenicht/ngx-propagation-stop.svg)](https://greenkeeper.io/)
+
 A npm-packet for a stopping Click Event Propagation.
 
 ## Installation
