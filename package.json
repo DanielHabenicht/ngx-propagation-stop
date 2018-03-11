@@ -47,7 +47,7 @@
     "codelyzer": "^4.0.1",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
-    "jasmine-core": "~3.1.0",
+    "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
     "karma-chrome-launcher": "~2.2.0",
@@ -67,5 +67,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "greenkeeper": {
+    "ignore": ["jasmine-core"]
   }
 }
