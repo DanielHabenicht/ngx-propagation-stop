@@ -43,7 +43,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
-    "@types/node": "~9.4.7",
+    "@types/node": "~9.6.0",
     "codelyzer": "^4.0.1",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
