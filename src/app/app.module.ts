@@ -1,18 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from 'app/app.component';
-import { PropagationStopDirective } from 'app/directives/propagation-stop.directive';
+import { AppComponent } from './app.component';
+import { PropagationStopModule } from 'projects/ngx-propagation-stop/src/public_api';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PropagationStopDirective
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, PropagationStopModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
