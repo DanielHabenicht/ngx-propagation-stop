@@ -1,9 +1,14 @@
 {
   "groups": {
-    "default": {
+    "app": {
       "packages": [
-        "ng-package.json",
         "package.json"
+      ]
+    },
+    "lib": {
+      "packages": [
+        "projects/ngx-propagation-stop/ng-package.json",
+        "projects/ngx-propagation-stop/package.json"
       ]
     }
   }
