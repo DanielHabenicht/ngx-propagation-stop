@@ -6,7 +6,7 @@
     "start": "ng serve --aot",
     "build": "ng build --prod",
     "build-prod": "ng build --prod --build-optimizer --aot",
-    "test": "ng test --single-run",
+    "test": "ng test ngx-propagation-stop-app",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:lib": "ng build --project ngx-propagation-stop && npm run copy-files",
