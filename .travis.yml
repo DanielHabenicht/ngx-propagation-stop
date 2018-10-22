@@ -6,10 +6,6 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
-cache:
-  directories:
-    - node_modules
-    - ~/.npm
 branches:
   only:
     - master
@@ -23,14 +19,11 @@ before_script:
   - sleep 3
   - npm prune
 script:
+ - npm run build:lib
  - npm run test
  - npm run e2e
- - npm run packagr
 after_success:
-  - sudo find -maxdepth 1 ! -name dist ! -name node_modules ! -name .git ! -name . -exec rm -rv -f {} \;
-  - mv dist/* .
-  - rmdir dist
-  - semantic-release
+  - npm run travis-deploy-once "npm run semantic-release"
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
