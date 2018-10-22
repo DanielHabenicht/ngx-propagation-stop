@@ -9,8 +9,12 @@
     "test": "ng test --single-run",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "release": "cd dist && semantic-release",
-    "commit": "git add * && git-cz"
+    "build:lib": "ng build --project ngx-propagation-stop && npm run copy-files",
+    "copy-license": "copy .\\LICENSE .\\dist\\ngx-propagation-stop",
+    "copy-readme": "copy .\\README.md .\\dist\\ngx-propagation-stop",
+    "copy-files": "npm run copy-license && npm run copy-readme",
+    "commit": "git add * && git-cz",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "private": true,
   "dependencies": {
@@ -48,8 +52,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
-    "semantic-release": "^15.0.2",
-    "travis-deploy-once": "^4.3.4",
+    "semantic-release": "^15.9.2",
+    "travis-deploy-once": "^5.0.1",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",
     "tslib": "^1.9.0",
@@ -60,5 +64,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "pkgRoot": "dist/ngx-propagation-stop"
   }
 }
