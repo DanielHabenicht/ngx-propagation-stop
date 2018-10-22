@@ -14,7 +14,8 @@
     "copy-readme": "cp ./README.md ./dist/ngx-propagation-stop",
     "copy-files": "npm run copy-license && npm run copy-readme",
     "commit": "git add * && git-cz",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
