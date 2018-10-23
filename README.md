@@ -18,11 +18,11 @@ $ npm install ngx-propagation-stop --save
 Do not forget to add it to your app.module.ts:
 
 ```typescript
-import { PropagationStopDirective } from 'ngx-propagation-stop';
+import { PropagationStopModule } from 'ngx-propagation-stop';
 
 @NgModule({
-  declarations: [
-    PropagationStopDirective
+  imports: [
+    PropagationStopModule
   ]
 })
 ```
@@ -37,6 +37,6 @@ Just add the `propagationStop` directive to your element and the outer elements 
 </div>
 ```
 
-## Contribute
+## Thanks to
 
 This project is based on a StackOverflow answer: https://stackoverflow.com/questions/35274028/stop-mouse-event-propagation-in-angular
