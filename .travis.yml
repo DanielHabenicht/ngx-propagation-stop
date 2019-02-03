@@ -18,10 +18,12 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - sleep 3
   - npm prune
+  - npm install codecov
 script:
  - npm run build:lib
  - npm run test
- - npm run e2e
+ - npm run e2e -- --code-coverage
+ - codecov
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
 branches:
