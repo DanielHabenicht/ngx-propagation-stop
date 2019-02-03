@@ -21,8 +21,8 @@ before_script:
   - npm install codecov
 script:
  - npm run build:lib
- - npm run test
- - npm run e2e -- --code-coverage
+ - npm run test -- --code-coverage
+ - npm run e2e
  - codecov
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
