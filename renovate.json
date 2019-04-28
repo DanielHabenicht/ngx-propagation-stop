@@ -1,10 +1,10 @@
 {
   "extends": [
     "config:base",
-    ":semanticCommits",
-    "automerge": true,
-    "major": {
-      "automerge": false
-    }
-  ]
+    ":semanticCommits"
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
 }
