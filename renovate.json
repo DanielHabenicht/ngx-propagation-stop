@@ -6,5 +6,15 @@
   "automerge": true,
   "major": {
     "automerge": false
-  }
+  },
+  "packageRules": [
+    {
+      "extends": "monorepo:angular",
+      "groupName": "angular monorepo"
+    },
+    {
+      "extends": "monorepo:angularcli",
+      "groupName": "angularcli monorepo"
+    }
+  ]
 }
