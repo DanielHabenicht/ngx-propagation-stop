@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/ngx-propagation-stop.svg)](https://badge.fury.io/js/ngx-propagation-stop)
-[![Build Status](https://travis-ci.org/DanielHabenicht/ngx-propagation-stop.svg?branch=master)](https://travis-ci.org/DanielHabenicht/ngx-propagation-stop)
+[![Build Status](https://dev.azure.com/DanielHabenicht/ngx-propagation-stop/_apis/build/status/DanielHabenicht.ngx-propagation-stop?branchName=master)](https://dev.azure.com/DanielHabenicht/ngx-propagation-stop/_build/latest?definitionId=3&branchName=master)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/DanielHabenicht/ngx-propagation-stop.svg)](https://greenkeeper.io/)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 [![codecov](https://codecov.io/gh/DanielHabenicht/ngx-propagation-stop/branch/master/graph/badge.svg)](https://codecov.io/gh/DanielHabenicht/ngx-propagation-stop)
 
 # ngx-propagation-stop
