@@ -27,7 +27,6 @@ steps:
 - script: |
     npm run test -- --code-coverage
     npm run e2e
-    codecov
   displayName: 'npm test'
   
 - script: |
