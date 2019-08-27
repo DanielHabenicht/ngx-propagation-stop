@@ -3,6 +3,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 [![codecov](https://codecov.io/gh/DanielHabenicht/ngx-propagation-stop/branch/master/graph/badge.svg)](https://codecov.io/gh/DanielHabenicht/ngx-propagation-stop)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FDanielHabenicht%2Fngx-propagation-stop.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FDanielHabenicht%2Fngx-propagation-stop?ref=badge_shield)
 
 # ngx-propagation-stop
 
@@ -41,3 +42,7 @@ Just add the `propagationStop` directive to your element and the outer elements 
 ## Thanks to
 
 This project is based on a StackOverflow answer: https://stackoverflow.com/questions/35274028/stop-mouse-event-propagation-in-angular
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FDanielHabenicht%2Fngx-propagation-stop.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FDanielHabenicht%2Fngx-propagation-stop?ref=badge_large)
