@@ -57,7 +57,7 @@
     "tslib": "1.10.0",
     "tslint": "5.20.0",
     "typescript": "3.5.3",
-    "webdriver-manager": "^12.1.7"
+    "webdriver-manager": "12.1.7"
   },
   "config": {
     "commitizen": {
