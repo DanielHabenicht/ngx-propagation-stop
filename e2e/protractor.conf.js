@@ -1,6 +1,8 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
+// Use puppeteer
+process.env.CHROME_BIN = require('puppeteer').executablePath();
 const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
@@ -9,6 +11,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
+      binary: process.env.CHROME_BIN,
       args: ['--headless', '--no-sandbox', '--test-type=browser', '--disable-gpu', '--window-size=1200,900']
     }
   },
