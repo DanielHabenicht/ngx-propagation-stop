@@ -28,7 +28,7 @@
     "@angular/platform-browser-dynamic": "8.2.14",
     "@angular/router": "8.2.14",
     "rxjs": "6.5.4",
-    "zone.js": "0.10.2"
+    "zone.js": "0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.803.25",
