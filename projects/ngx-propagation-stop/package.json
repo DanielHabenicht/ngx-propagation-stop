@@ -21,6 +21,6 @@
   },
   "private": false,
   "peerDependencies": {
-    "@angular/core": ">=4.x <9.0.0"
+    "@angular/core": ">=4.x <10.0.0"
   }
 }
