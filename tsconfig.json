@@ -10,20 +10,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "ngx-propagation-stop": [
-        "dist/ngx-propagation-stop"
-      ],
-      "ngx-propagation-stop/*": [
-        "dist/ngx-propagation-stop/*"
-      ]
+      "ngx-propagation-stop": ["dist/ngx-propagation-stop"],
+      "ngx-propagation-stop/*": ["dist/ngx-propagation-stop/*"]
     }
+  },
+  "angularCompilerOptions": {
+    "enableIvy": false
   }
 }
