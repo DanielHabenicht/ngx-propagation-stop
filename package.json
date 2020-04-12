@@ -8,7 +8,7 @@
     "build-prod": "ng build --prod --build-optimizer --aot",
     "test": "ng test ngx-propagation-stop-app",
     "lint": "ng lint",
-    "e2e": "ng e2e",
+    "e2e": "webdriver-manager update --versions.chrome=80.0.3987.106 --gecko false --standalone false && ng e2e --webdriverUpdate false",
     "build:lib": "ng build --project ngx-propagation-stop && npm run copy-files",
     "copy-license": "cp ./LICENSE ./dist/ngx-propagation-stop",
     "copy-readme": "cp ./README.md ./dist/ngx-propagation-stop",
