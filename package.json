@@ -52,7 +52,7 @@
     "karma-jasmine-html-reporter": "1.7.0",
     "ng-packagr": "10.1.2",
     "protractor": "5.4.4",
-    "puppeteer": "2.1.1",
+    "puppeteer": "10.4.0",
     "semantic-release": "17.4.7",
     "ts-node": "8.10.2",
     "tslint": "6.1.3",
