@@ -4,41 +4,41 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: "ubuntu-latest"
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "10.x"
+    displayName: "Install Node.js"
 
-- script: |
-    npm install
-    npm install codecov -g
-  displayName: 'npm install'
-  
-- script: |
-    npm run build:lib
-  displayName: 'npm build'
-  
-- script: |
-    npm run test -- --code-coverage
-    npm run e2e
-  displayName: 'npm test'
-  
-- script: |
-    codecov
-  displayName: 'publish coverage'
-  env:
-    CODECOV_TOKEN: $(CODECOV_TOKEN)
+  - script: |
+      npm install
+      npm install codecov -g
+    displayName: "npm install"
 
-- script: |
-    npm run semantic-release
-  displayName: 'release'
-  env:
-    GH_TOKEN: $(GITHUB_PAT)
-    NPM_TOKEN: $(NPM_PAT)
-    NPM_USERNAME: $(NPM_USER)
+  - script: |
+      npm run build:lib
+    displayName: "npm build"
+
+  - script: |
+      npm run test -- --code-coverage
+      npm run e2e
+    displayName: "npm test"
+
+  - script: |
+      codecov
+    displayName: "publish coverage"
+    env:
+      CODECOV_TOKEN: $(CODECOV_TOKEN)
+
+  - script: |
+      npm run semantic-release
+    displayName: "release"
+    env:
+      GH_TOKEN: $(GITHUB_PAT)
+      NPM_TOKEN: $(NPM_PAT)
+      NPM_USERNAME: $(NPM_USER)
